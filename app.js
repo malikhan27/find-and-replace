@@ -74,7 +74,7 @@ if (userinput.toLowerCase()) {
         con= true
         if(tellaword===word){
           break;
-        }
+        } 
       }
     }
   } else if (askUser === 2) {
@@ -115,6 +115,10 @@ if(con){
   }
 }
 
+if(tellaword===word)
+  {document.write(`${userinput} <br/> <br />Your word <b>${tellaword}</b> is present at index <b>${upd}<b> `)}
+else {
+  alert("YOUR WORD IS NOT FOUND")
+}
 
 
-document.write(`${userinput} <br/> <br />Your word <b>${tellaword}</b> is present at index <b>${upd}<b> `)
