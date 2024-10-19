@@ -117,4 +117,4 @@ if(con){
 
 
 
-document.write(`${userinput} <br/> <br />Your word <b>${tellaword}</b> is present <b>${upd}<b> `)
+document.write(`${userinput} <br/> <br />Your word <b>${tellaword}</b> is present at index <b>${upd}<b> `)
