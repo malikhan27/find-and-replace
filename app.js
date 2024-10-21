@@ -54,9 +54,9 @@
 
 
 var userinput = prompt ('Enter Any Paragraph To Participate');
+userinput=userinput.toLowerCase()
 
-
-if (userinput.toLowerCase()) {
+if (userinput) {
   var askUser = +prompt (
     userinput +
       '\n If you want to find any word from the above para press 1 or \n if you want to find and replace press 2'
@@ -66,10 +66,10 @@ if (userinput.toLowerCase()) {
     var num=0
     var word = ""
     var con= false
-   
+    tellaword=tellaword.toLowerCase()
     for (i = 0; i < userinput.length; i++) {
-      if (tellaword[num].toLowerCase()===userinput[i]) {
-        word+= tellaword[num] 
+      if (tellaword[num]===userinput[i]) {
+        word+= tellaword[num].toLowerCase() 
         num++
         con= true
         if(tellaword===word){
@@ -104,7 +104,7 @@ if (userinput.toLowerCase()) {
 }
 
 word = word.toLowerCase()
-update= userinput.indexOf(word)
+update= userinput.indexOf(word.toLowerCase())
 update--
 
 if(con){
@@ -115,7 +115,7 @@ if(con){
   }
 }
 
-if(tellaword===word)
+if(tellaword.toLowerCase()===word.toLowerCase())
   {document.write(`${userinput} <br/> <br />Your word <b>${tellaword}</b> is present at index <b>${upd}<b> `)}
 else {
   alert("YOUR WORD IS NOT FOUND")
